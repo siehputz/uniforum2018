@@ -756,14 +756,6 @@ Arduino IDE, add board support for  ESP8266 and libraries needed by lab
 </p>
 </dd>
 <dt class="hdlist1">
-Lab 1a 
-</dt>
-<dd>
-<p>
-Configure the Arduino IDE for the ESP8266
-</p>
-</dd>
-<dt class="hdlist1">
 Lab 1 
 </dt>
 <dd>
@@ -857,7 +849,7 @@ Using ESPEasy to configure an ESP8266 with no coding necessary
 </div>
 </div>
 <div class="sect1">
-<h2 id="_lab_0_arduino_ide_install_esp8266_and_libraries_required_for_lab">LAB 0 :: Arduino IDE, install ESP8266 and libraries required for lab</h2>
+<h2 id="_lab_0a_arduino_ide_install_esp8266_and_libraries_required_for_lab">LAB 0a :: Arduino IDE, install ESP8266 and libraries required for lab</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>This lab is available at <a href="https://github.com/siehputz/uniforum2018">https://github.com/siehputz/uniforum2018</a></p></div>
 <div class="olist arabic"><ol class="arabic">
@@ -999,11 +991,6 @@ The following libraries need to be installed:
 <div class="ulist"><ul>
 <li>
 <p>
-ESP8266 examples (ESP8266 sketches examples)
-</p>
-</li>
-<li>
-<p>
 Adafruit MQTT Library
 </p>
 </li>
@@ -1065,7 +1052,7 @@ It is a good practice to restart the Arduino IDE after installing boards and lib
 </div>
 </div>
 <div class="sect1">
-<h2 id="_lab_1a_arduino_ide_configure_for_the_esp8266_nodemcu_lab_board">LAB 1a :: Arduino IDE, Configure for the ESP8266 Nodemcu Lab board</h2>
+<h2 id="_lab_0b_arduino_ide_select_esp8266_version_and_serial_port">LAB 0b :: Arduino IDE, Select ESP8266 version and serial port</h2>
 <div class="sectionbody">
 <div class="olist arabic"><ol class="arabic">
 <li>
@@ -1163,6 +1150,106 @@ on MAC
 </ul></div>
 </li>
 </ol></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lab_0c_install_mqtt_broker_mosquito_and_node_red">LAB 0c :: Install MQTT Broker "mosquito" and "node-red"</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_these_steps_are_only_needed_if_you_want_to_use_your_own_mosquitto_and_node_8217_red_servers">These steps are only needed if you want to use your "own" "mosquitto" and "node&#8217;red" servers.</h3>
+</div>
+<div class="sect2">
+<h3 id="_if_you_install_your_own_mosquitto_and_node_red_servers_you_will_need_to_use_their_ip_addresses_in_the_labs_that_follow">If you install your own "mosquitto" and node-red servers you will need to use their IP Addresses in the labs that follow.</h3>
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+Hardware Choices
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Raspberry Pi Model 3 works well
+</p>
+</li>
+<li>
+<p>
+Raspberry Pi Zero W works ok (bit slower)
+</p>
+</li>
+<li>
+<p>
+Other hardware running Linux , Windows or MAC
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+Login to system where you want "mosquitto" to run
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Ubuntu - 16.04, 17.04, 18.04
+</p>
+</li>
+<li>
+<p>
+Raspbian 2018-04-18
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+sudo apt -y install mosquitto
+</p>
+</li>
+</ul></div>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+Login to system where you want "node-red" to run
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Ubuntu - 16.04, 17.04, 18.04
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+sudo apt -y install nodejs
+</p>
+</li>
+<li>
+<p>
+sudo apt -y install npm
+</p>
+</li>
+<li>
+<p>
+sudo npm install -g --unsafe-perm node-red
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+Raspbian 2018-04-18
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+sudo apt -y install nodered
+</p>
+</li>
+</ul></div>
+</li>
+</ul></div>
+</li>
+</ol></div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -3883,7 +3970,7 @@ The OUT pin of the DHT11 goes to D5
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-05-20 18:32:13 CDT
+Last updated 2018-05-24 18:06:36 CDT
 </div>
 </div>
 </body>
